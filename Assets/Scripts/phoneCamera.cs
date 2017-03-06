@@ -54,10 +54,10 @@ public class phoneCamera : MonoBehaviour {
 
         background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
 
-        //Proper angle
-
-        int orient = -backCam.videoRotationAngle;
-        background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
+        //Proper angle: Not sure I need it for the app since it's going to be square
+        //
+        //int orient = -backCam.videoRotationAngle;
+        //background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
 
 }
