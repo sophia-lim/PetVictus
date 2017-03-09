@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://petvictus.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">347767617502</string>
+  <string name="google_storage_bucket" translatable="false">petvictus.appspot.com</string>
+  <string name="google_api_key" translatable="false">AIzaSyCR87FMXxA8OeQpi_eWdB8z-_oXthXi6AU</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCR87FMXxA8OeQpi_eWdB8z-_oXthXi6AU</string>
+  <string name="google_app_id" translatable="false">1:347767617502:android:71f0f090d880a107</string>
+  <string name="default_web_client_id" translatable="false">347767617502-hur83da8eera505h3eg8uf2qjlpvjcin.apps.googleusercontent.com</string>
+</resources>
