@@ -10,8 +10,9 @@ public class phoneCamera : MonoBehaviour {
     private WebCamTexture backCam;
     private Texture defaultBackground;
 
-    public Material savedImageMaterial;
-    public Texture savedImageTexture;
+    //public Material savedImageMaterial;
+    //public Texture savedImageTexture;
+
 
     public RawImage background;
     public AspectRatioFitter fit;
@@ -64,25 +65,5 @@ public class phoneCamera : MonoBehaviour {
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
     }
 
-    //Returns filename modified with date and time
-    string fileName(int width, int height) {
-        return string.Format("screen_{0}x{1}_{2}.png",
-                              width, height,
-                              System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
-    }
 
-    public void takePicture() {
-        Application.CaptureScreenshot(Application.persistentDataPath + "/Resources/" + fileName(1440, 2560));
-        Debug.Log(Application.persistentDataPath + "/Resources/" + fileName(1440, 2560));
-        createNewTexture();
-    }
-
-    private void createNewTexture() {
-        savedImageTexture = Resources.Load(fileName(1440, 2560)) as Texture;
-        gameObject.GetComponent<Renderer>().material.mainTexture = savedImageTexture;
-    }
-
-    public void viewPicture() {
-        
-    }
 }
