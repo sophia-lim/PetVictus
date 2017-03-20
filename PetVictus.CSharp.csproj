@@ -104,6 +104,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GalleryScreenshot\Example\DemoScript.cs" />
+    <Compile Include="Assets\GalleryScreenshot\ScreenshotManager.cs" />
+    <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\mealRawImage.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\phoneCamera.cs" />
@@ -122,6 +125,9 @@
     <None Include="Assets\PlayServicesResolver\proguard-unity.txt" />
     <None Include="Assets\Plugins\Android\Firebase\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\Firebase\res\values\google-services.xml" />
+    <None Include="Assets\Plugins\Android\GalleryScreenshot\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\GalleryScreenshot\bin\AndroidManifest.xml" />
+    <None Include="Assets\Plugins\Android\GalleryScreenshot\bin\R.txt" />
     <None Include="Assets\Plugins\Android\firebase-common-10.2.0\AndroidManifest.xml" />
     <None Include="Assets\Plugins\Android\firebase-common-10.2.0\proguard.txt" />
     <None Include="Assets\Plugins\Android\firebase-iid-10.2.0\AndroidManifest.xml" />
