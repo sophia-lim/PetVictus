@@ -104,8 +104,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GalleryScreenshot\Example\DemoScript.cs" />
     <Compile Include="Assets\GalleryScreenshot\ScreenshotManager.cs" />
+    <Compile Include="Assets\Scripts\DemoScript.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\mealRawImage.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
