@@ -4,20 +4,24 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class phoneCamera : MonoBehaviour {
-
-    public string path = "";
+    
     private bool camAvailable;
     private WebCamTexture backCam;
     private Texture defaultBackground;
 
     //public Material savedImageMaterial;
     //public Texture savedImageTexture;
-
-
+    
     public RawImage background;
     public AspectRatioFitter fit;
 
+    public bool isCapturedImgOn;
+    public Image capturedImage;
+    public bool cameraOn;
+
     private void Start() {
+
+        //Camera setup (24 - 50)
         defaultBackground = background.texture;
         WebCamDevice[] devices = WebCamTexture.devices;
 
@@ -44,6 +48,11 @@ public class phoneCamera : MonoBehaviour {
         background.texture = backCam;
 
         camAvailable = true;
+
+        //Captured image setup
+        capturedImage.enabled = false;
+        isCapturedImgOn = false;
+        cameraOn = true;
     }
 
     private void Update() {
@@ -63,7 +72,20 @@ public class phoneCamera : MonoBehaviour {
         
         int orient = -backCam.videoRotationAngle;
         background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
+
+        //If the camera is off, then load the captured image
+        if (cameraOn == false) {
+            capturedImage.enabled = true;
+            isCapturedImgOn = true;
+        }
     }
 
+    //Close the camera on event trigger
+    public void closeCamera() {
+        if(backCam.isPlaying) {
+            backCam.Stop();
+            cameraOn = false;
+        }
+    }
 
 }
