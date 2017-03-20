@@ -9,6 +9,7 @@ using System.IO;
 
 public class createSaveImage : MonoBehaviour {
 
+    public Rect screenArea = new Rect(0, 369, 1440, 1440);
     /*public bool hideGUI = false;
     public Texture2D texture;
     public Text console;
@@ -29,7 +30,7 @@ public class createSaveImage : MonoBehaviour {
     }*/
 
     public void OnSaveScreenshotPress() {
-        ScreenshotManager.SaveScreenshot("MealPost", "PetVictus", "jpeg");
+        ScreenshotManager.SaveScreenshot("MealPost", "PetVictus", "jpeg", screenArea);
         //if (hideGUI) ui.alpha = 0;
     }
 
