@@ -106,9 +106,10 @@
   <ItemGroup>
     <Compile Include="Assets\GalleryScreenshot\ScreenshotManager.cs" />
     <Compile Include="Assets\Scripts\DemoScript.cs" />
+    <Compile Include="Assets\Scripts\calculateMood.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
-    <Compile Include="Assets\Scripts\mealRawImage.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
+    <Compile Include="Assets\Scripts\navigation.cs" />
     <Compile Include="Assets\Scripts\phoneCamera.cs" />
   </ItemGroup>
   <ItemGroup>

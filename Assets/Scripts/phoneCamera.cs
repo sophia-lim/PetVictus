@@ -4,24 +4,22 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class phoneCamera : MonoBehaviour {
-    
+    //Camera variables
     private bool camAvailable;
     private WebCamTexture backCam;
     private Texture defaultBackground;
-
-    //public Material savedImageMaterial;
-    //public Texture savedImageTexture;
-    
     public RawImage background;
     public AspectRatioFitter fit;
 
+    //Captured image variables
     public bool isCapturedImgOn;
     public Image capturedImage;
     public bool cameraOn;
 
+
     private void Start() {
 
-        //Camera setup (24 - 50)
+        //Camera setup (26 - 52)
         defaultBackground = background.texture;
         WebCamDevice[] devices = WebCamTexture.devices;
 
