@@ -187,6 +187,8 @@
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-analytics-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+    <None Include="Assets\Graphics\Shaders\TSF.shader" />
+    <None Include="Assets\Graphics\Shaders\TSFOutline.shader" />
     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver.txt" />
     <None Include="Assets\PlayServicesResolver\proguard-messaging-workaround.txt" />
     <None Include="Assets\PlayServicesResolver\proguard-unity.txt" />
