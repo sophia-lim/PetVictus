@@ -109,9 +109,12 @@
     <Compile Include="Assets\Scripts\calculateMood.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\cursorPosition.cs" />
+    <Compile Include="Assets\Scripts\helper.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\navigation.cs" />
     <Compile Include="Assets\Scripts\phoneCamera.cs" />
+    <Compile Include="Assets\Scripts\saveManager.cs" />
+    <Compile Include="Assets\Scripts\saveState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Firebase\Editor\FirebaseAnalytics.txt" />
