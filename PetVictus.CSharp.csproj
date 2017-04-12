@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="Assets\GalleryScreenshot\ScreenshotManager.cs" />
     <Compile Include="Assets\Scripts\DemoScript.cs" />
+    <Compile Include="Assets\Scripts\FoodTags.cs" />
     <Compile Include="Assets\Scripts\calculateMood.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\cursorPosition.cs" />

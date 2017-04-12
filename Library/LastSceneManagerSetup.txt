@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/cursorSceneTest.unity
+- path: Assets/Scenes/post_edit.unity
   isLoaded: 1
   isActive: 1

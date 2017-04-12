@@ -25,4 +25,9 @@ public class saveState {
     // Current mood
     public string currentMood = "Content";
     public int currentMoodIndex = 2;
+
+    // Post file directory
+    // To be accessed in post_edit to display image
+    // To be updated in post_create
+    public string currentPost = "";
 }
