@@ -22,6 +22,10 @@ public class saveState {
     // 3: Worried    || 7: Angry
     ArrayList moods = new ArrayList { "Ecstatic", "Happy", "Content", "Worried", "Alerted", "Sick", "Unhappy", "Angry"};
 
+    // Animal
+    public string userPet = "";
+    public string petName = "";
+
     // Current mood
     public string currentMood = "Content";
     public int currentMoodIndex = 2;
@@ -30,4 +34,5 @@ public class saveState {
     // To be accessed in post_edit to display image
     // To be updated in post_create
     public string currentPost = "";
+    
 }
