@@ -68,7 +68,7 @@ public class FoodTags : MonoBehaviour {
     public void confirmPost() {
         updateTotalFoodCounts();
         saveManager.Instance.Save();
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("main");
     }
 
     private void updateTotalFoodCounts() {

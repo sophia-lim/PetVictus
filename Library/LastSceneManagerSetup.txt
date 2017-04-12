@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/post_edit.unity
+- path: Assets/Scenes/post_create.unity
   isLoaded: 1
   isActive: 1

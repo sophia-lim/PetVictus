@@ -49,6 +49,8 @@ public class createSaveImage : MonoBehaviour {
         //console.text += "\nScreenshot finished saving to " + path;
     }
 
+
+
     //void ImageSaved(string path) {
     //    console.text += "\n" + texture.name + " finished saving to " + path;
     //}

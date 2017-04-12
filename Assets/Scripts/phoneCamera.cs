@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class phoneCamera : MonoBehaviour {
     //Camera variables
@@ -84,6 +85,10 @@ public class phoneCamera : MonoBehaviour {
             backCam.Stop();
             cameraOn = false;
         }
+    }
+
+    public void loadPostEditScene() {
+        SceneManager.LoadScene("post_edit");
     }
 
 }
