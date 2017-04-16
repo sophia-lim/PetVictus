@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: d74c8cad67477374db6ccd8405c192f5
+timeCreated: 1492375797
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: 'Chams '
+  fontNames:
+  - 'Chams '
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

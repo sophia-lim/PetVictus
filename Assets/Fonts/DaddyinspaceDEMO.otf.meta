@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bb68c3c2355b16c488b94330dd92a01f
+timeCreated: 1492375797
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Daddy in space DEMO
+  fontNames:
+  - Daddy in space DEMO
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
