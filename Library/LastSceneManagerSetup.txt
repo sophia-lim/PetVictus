@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/instantiationTest.unity
+- path: Assets/Scenes/registration.unity
   isLoaded: 1
   isActive: 1
