@@ -5,23 +5,25 @@ using UnityEngine;
 public class animatorController : MonoBehaviour {
 
     private Animator anim;
+    private bool play;
+    private bool played;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
+        play = false;
+        played = false;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (playAnim() == true) {
-            anim.SetBool("play", true);
-        } else {
-            anim.SetBool("play", false);
-        }
+    
 	}
 
-    public bool playAnim() {
-        return true;
+    // To put on button
+    public void playAnim() {
+        anim.Play("kick");
+        anim.SetBool("play", true);
     }
 
 }
