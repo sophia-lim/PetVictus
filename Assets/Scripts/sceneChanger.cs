@@ -31,6 +31,11 @@ public class sceneChanger : MonoBehaviour {
         SceneManager.LoadScene("registration");
     }
 
+	// Go to info
+	public void goToInformation() {
+		SceneManager.LoadScene ("information");
+	}
+
     // Exit game
     public void exitGame() {
         Application.Quit();
