@@ -3,6 +3,13 @@ using System.Collections;
 
 public class saveState {
 
+    // Account information
+    public bool firstTime = true;
+    public string petType = "";
+    public string petName = "";
+    public string ownerName = "";
+    public string email = "";
+
     // Count of food group per post
     public int postVeggieCount = 0;
     public int postMeatCount = 0;
@@ -22,9 +29,6 @@ public class saveState {
     // 3: Worried    || 7: Angry
     public ArrayList moods = new ArrayList { "Ecstatic", "Happy", "Content", "Worried", "Alerted", "Sick", "Unhappy", "Angry"};
 
-    // Animal
-    public string userPet = "";
-    public string petName = "";
 
     // Current mood
     public string currentMood = "Happy";
