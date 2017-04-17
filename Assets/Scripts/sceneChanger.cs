@@ -30,4 +30,9 @@ public class sceneChanger : MonoBehaviour {
     public void goToRegistration() {
         SceneManager.LoadScene("registration");
     }
+
+    // Exit game
+    public void exitGame() {
+        Application.Quit();
+    }
 }

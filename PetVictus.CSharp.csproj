@@ -111,7 +111,9 @@
     <Compile Include="Assets\Scripts\Animal.cs" />
     <Compile Include="Assets\Scripts\DemoScript.cs" />
     <Compile Include="Assets\Scripts\FoodTags.cs" />
+    <Compile Include="Assets\Scripts\Music.cs" />
     <Compile Include="Assets\Scripts\StartScene.cs" />
+    <Compile Include="Assets\Scripts\animatorController.cs" />
     <Compile Include="Assets\Scripts\calculateMood.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\cursorPosition.cs" />
