@@ -1,31 +1,58 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+using UnityEngine.UI;
+//using UnityEditor;
 
 public class instantiator : MonoBehaviour {
 
-	public Object prefab;
+	public UnityEngine.Object prefab;
 	public Transform parent;
 	public GameObject animControllerScript;
+    private Animator anim;
 
-	// Use this for initialization
-	void Start () {
-		// Load specific animal
-        loadPrefab(saveManager.Instance.state.petType);
-		//loadPrefab("petCow_animTest");
-        //loadPrefab("pig");
-        GameObject clone = Instantiate(prefab,parent) as GameObject;
-		clone.AddComponent<animatorController>();
-		clone.GetComponent<Animator>().runtimeAnimatorController = AssetDatabase.LoadAssetAtPath("Assets/Graphics/Models/animator.controller", typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
-        //GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
-        //cube.AddComponent<Rigidbody>();
-        //cube.transform.position = new Vector3(x, y, 0);
+    public GameObject dog;
+    public GameObject cow;
+    public GameObject pig;
+    public GameObject sheep;
 
-        //Object prefab = AssetDatabase.LoadAssetAtPath("Assets/something.prefab", typeof(GameObject));
-        //GameObject clone = Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;
-        // Modify the clone to your heart's content
-        //clone.transform.position = Vector3.one;
+    // Use this for initialization
+    void Start () {
+
+        dog.SetActive(false);
+        cow.SetActive(false);
+        pig.SetActive(false);
+        sheep.SetActive(false);
+
+        if (saveManager.Instance.state.petType == "dog") {
+            dog.SetActive(true);
+            anim = dog.GetComponent<Animator>();
+          
+        } else if (saveManager.Instance.state.petType == "cow") {
+            cow.SetActive(true);
+            anim = cow.GetComponent<Animator>();
+
+        } else if (saveManager.Instance.state.petType == "pig") {
+            pig.SetActive(true);
+            anim = pig.GetComponent<Animator>();
+
+        } else if (saveManager.Instance.state.petType == "sheep") {
+            sheep.SetActive(true);
+            anim = sheep.GetComponent<Animator>();
+
+        }
+
+            // Load specific animal
+        //    loadPrefab(saveManager.Instance.state.petType);
+        //GameObject clone = Instantiate(prefab,parent) as GameObject;
+
+        //RuntimeAnimatorController rac = AssetDatabase.LoadAssetAtPath("Assets/Graphics/Models/animator.controller", typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
+        //RuntimeAnimatorController rac = Resources.Load("animator.controller", typeof(RuntimeAnimatorController)) as RuntimeAnimatorController;
+        //debug.text = rac.ToString(); 
+       // clone.GetComponent<Animator>().runtimeAnimatorController = rac;
+        //anim = GetComponent<Animator>();
+        //clone.AddComponent<animatorController>();
 
         /*MissingComponentException: There is no 'Animator' attached to the "sheep(Clone)" game object, but a script is trying to access it.
         You probably need to add a Animator to the game object "sheep(Clone)". Or your script needs to check if the component is attached before using it.
@@ -36,10 +63,31 @@ public class instantiator : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-}
+    }
 
     private void loadPrefab(string petType) {
-        prefab = AssetDatabase.LoadAssetAtPath("Assets/Graphics/Models/" + petType + ".fbx", typeof(GameObject));
+        prefab = Resources.Load(petType + ".fbx", typeof(GameObject)) as GameObject;
+
+        //debug.text = prefab.ToString();
+        //prefab = AssetDatabase.LoadAssetAtPath("Assets/Graphics/Models/" + petType + ".fbx", typeof(GameObject));
         Debug.Log ("Loaded prefab");
+    }
+
+    // To put on button
+    public void actionKick() {
+        anim.Play("kick");
+        anim.SetBool("kick", true);
+    }
+
+    // To put on button
+    public void actionShower() {
+        anim.Play("shower");
+        anim.SetBool("shower", true);
+    }
+
+    // To put on button
+    public void actionEat() {
+        anim.Play("eat");
+        anim.SetBool("eat", true);
     }
 }

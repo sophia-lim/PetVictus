@@ -14,7 +14,8 @@ public class createSaveImage : MonoBehaviour {
     //public Texture2D texture;
     //public Text console;
     //public CanvasGroup ui;
-    public Image screenshot;
+    //public Image screenshot;
+    private Sprite screenshot;
 
     void OnEnable() {
         // call backs
@@ -40,8 +41,10 @@ public class createSaveImage : MonoBehaviour {
 
     void ScreenshotTaken(Texture2D image) {
         //console.text += "\nScreenshot has been taken and is now saving...";
-        screenshot.sprite = Sprite.Create(image, new Rect(0, 0, image.width, image.height), new Vector2(.5f, .5f));
-        screenshot.color = Color.white;
+        screenshot = Sprite.Create(image, new Rect(0, 0, image.width, image.height), new Vector2(.5f, .5f));
+        //saveManager.Instance.state.screenshot = screenshot;
+        saveManager.Instance.Save();
+        //screenshot.color = Color.white;
         //ui.alpha = 1;
     }
 

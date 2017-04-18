@@ -12,16 +12,48 @@ public class Main : MonoBehaviour {
     public Text seafoodCount;
     public Text dairyCount;
 
+    //public GameObject dog;
+    //public GameObject cow;
+    //public GameObject pig;
+    //public GameObject sheep;
+
     //public Text currentMood;
     public Text petName;
 
 	// Use this for initialization
 	void Start () {
         displayInformation();
+
+       /* dog.SetActive(false);
+        cow.SetActive(false);
+        pig.SetActive(false);
+        sheep.SetActive(false);
+
+        if (saveManager.Instance.state.petType == "dog") {
+            dog.SetActive(true);
+            cow.SetActive(false);
+            pig.SetActive(false);
+            sheep.SetActive(false);
+        } else if (saveManager.Instance.state.petType == "cow") {
+            dog.SetActive(false);
+            cow.SetActive(true);
+            pig.SetActive(false);
+            sheep.SetActive(false);
+        } else if (saveManager.Instance.state.petType == "pig") {
+            dog.SetActive(false);
+            cow.SetActive(false);
+            pig.SetActive(true);
+            sheep.SetActive(false);
+        } else if (saveManager.Instance.state.petType == "dog") {
+            dog.SetActive(false);
+            cow.SetActive(false);
+            pig.SetActive(false);
+            sheep.SetActive(true);
+        }*/
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+            // Update is called once per frame
+            void Update () {
 		
 	}
 

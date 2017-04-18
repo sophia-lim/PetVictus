@@ -108,7 +108,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\GalleryScreenshot\ScreenshotManager.cs" />
-    <Compile Include="Assets\Scripts\Animal.cs" />
     <Compile Include="Assets\Scripts\DemoScript.cs" />
     <Compile Include="Assets\Scripts\FoodTags.cs" />
     <Compile Include="Assets\Scripts\Haptic.cs" />
@@ -119,6 +118,7 @@
     <Compile Include="Assets\Scripts\calculateMood.cs" />
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\cursorPosition.cs" />
+    <Compile Include="Assets\Scripts\displaySS.cs" />
     <Compile Include="Assets\Scripts\helper.cs" />
     <Compile Include="Assets\Scripts\instantiator.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />

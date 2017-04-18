@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using UnityEngine;
 
 public class saveState {
 
@@ -28,8 +29,7 @@ public class saveState {
     // 2: Content    || 6: Unhappy
     // 3: Worried    || 7: Angry
     public ArrayList moods = new ArrayList { "Ecstatic", "Happy", "Content", "Worried", "Alerted", "Sick", "Unhappy", "Angry"};
-
-
+    
     // Current mood
     public string currentMood = "Happy";
 

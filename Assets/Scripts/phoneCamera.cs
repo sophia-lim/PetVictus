@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class phoneCamera : MonoBehaviour {
     //Camera variables
@@ -17,9 +18,13 @@ public class phoneCamera : MonoBehaviour {
     public Image capturedImage;
     public bool cameraOn;
 
+    public GameObject newTags;
+    public GameObject button;
+
+    //public Image screenshot;
 
     private void Start() {
-
+        newTags.SetActive(false);
         //Camera setup (26 - 52)
         defaultBackground = background.texture;
         WebCamDevice[] devices = WebCamTexture.devices;
@@ -91,4 +96,26 @@ public class phoneCamera : MonoBehaviour {
         SceneManager.LoadScene("post_edit");
     }
 
+    public void capture() {
+
+        // NOTE - you almost certainly have to do this here:
+
+        //yield return new WaitForEndOfFrame();
+
+        // it's a rare case where the Unity doco is pretty clear,
+        // http://docs.unity3d.com/ScriptReference/WaitForEndOfFrame.html
+        // be sure to scroll down to the SECOND long example on that doco page 
+
+        Texture2D photo = new Texture2D(backCam.width, backCam.height);
+        photo.SetPixels(backCam.GetPixels());
+        photo.Apply();
+        button.SetActive(false);
+        newTags.SetActive(true);
+        //screenshot.GetComponent<Renderer>().material.mainTexture = photo;
+
+        //Encode to a PNG
+        //byte[] bytes = photo.EncodeToPNG();
+        //Write out the PNG. Of course you have to substitute your_path for something sensible
+        //File.WriteAllBytes(your_path + "photo.png", bytes);
+    }
 }

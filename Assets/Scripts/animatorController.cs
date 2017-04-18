@@ -9,13 +9,8 @@ public class animatorController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-	}
+    }
 	
-	// Update is called once per frame
-	void Update () {
-    
-	}
-
     // To put on button
     public void actionKick() {
         anim.Play("kick");
