@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class calculateMood : MonoBehaviour {
 
-    private int totalFoodTagged = 0;
+    private int totalFoodTagged;
     public Text displayedCurrentMood;
 
     // Use this for initialization
     void Start () {
+
+        Debug.Log("hiiiiiiiiiiiii");
         if (calculateTotalFoodTagged() == 0) {
             // Happy by default
             Debug.Log("Default mood");

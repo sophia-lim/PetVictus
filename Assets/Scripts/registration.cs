@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 
 public class registration : MonoBehaviour {
 
@@ -18,9 +16,8 @@ public class registration : MonoBehaviour {
 
     public GameObject cow;
     public GameObject sheep;
-    public GameObject bunny;
-    //public GameObject pig;
-    //public GameObject dog;
+    public GameObject pig;
+    public GameObject dog;
 
     private string email = "";
     private string password = "";
@@ -34,9 +31,8 @@ public class registration : MonoBehaviour {
     void Start() {
         cow.SetActive(true);
         sheep.SetActive(false);
-        bunny.SetActive(false);
-        //pig.SetActive(false);
-        //dog.SetActive(false);
+        pig.SetActive(false);
+        dog.SetActive(false);
 
         dependencyStatus = Firebase.FirebaseApp.CheckDependencies();
         if (dependencyStatus != Firebase.DependencyStatus.Available) {
@@ -105,23 +101,21 @@ public class registration : MonoBehaviour {
     }
 
     private void displayAnimal() {
+        
         cow.SetActive(false);
         sheep.SetActive(false);
-        bunny.SetActive(false);
-        //pig.SetActive(false);
-        //dog.SetActive(false);
+        pig.SetActive(false);
+        dog.SetActive(false);
 
         if (saveManager.Instance.state.petType == "cow") {
             cow.SetActive(true);
         } else if (saveManager.Instance.state.petType == "sheep") {
             sheep.SetActive(true);
-        } else if (saveManager.Instance.state.petType == "bunny") {
-            bunny.SetActive(true);
-        } /*else if (saveManager.Instance.state.petType == "pig") {
+        }  else if (saveManager.Instance.state.petType == "pig") {
             pig.SetActive(true);
         } else if (saveManager.Instance.state.petType == "dog") {
             dog.SetActive(true);
-        }*/
+        }
     }
 
     public void chooseAnimal(Text animalType) {
@@ -140,5 +134,5 @@ public class registration : MonoBehaviour {
         updateInternalDatabase();
         saveManager.Instance.Save();
     }
-
+    
 }

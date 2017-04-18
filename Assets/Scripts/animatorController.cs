@@ -5,14 +5,10 @@ using UnityEngine;
 public class animatorController : MonoBehaviour {
 
     private Animator anim;
-    private bool play;
-    private bool played;
 
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
-        play = false;
-        played = false;
 	}
 	
 	// Update is called once per frame
@@ -21,9 +17,21 @@ public class animatorController : MonoBehaviour {
 	}
 
     // To put on button
-    public void playAnim() {
+    public void actionKick() {
         anim.Play("kick");
-        anim.SetBool("play", true);
+        anim.SetBool("kick", true);
+    }
+
+    // To put on button
+    public void actionShower() {
+        anim.Play("shower");
+        anim.SetBool("shower", true);
+    }
+
+    // To put on button
+    public void actionEat() {
+        anim.Play("eat");
+        anim.SetBool("eat", true);
     }
 
 }

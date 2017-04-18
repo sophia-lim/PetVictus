@@ -111,6 +111,8 @@
     <Compile Include="Assets\Scripts\Animal.cs" />
     <Compile Include="Assets\Scripts\DemoScript.cs" />
     <Compile Include="Assets\Scripts\FoodTags.cs" />
+    <Compile Include="Assets\Scripts\Haptic.cs" />
+    <Compile Include="Assets\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\Music.cs" />
     <Compile Include="Assets\Scripts\StartScene.cs" />
     <Compile Include="Assets\Scripts\animatorController.cs" />
@@ -118,6 +120,7 @@
     <Compile Include="Assets\Scripts\createSaveImage.cs" />
     <Compile Include="Assets\Scripts\cursorPosition.cs" />
     <Compile Include="Assets\Scripts\helper.cs" />
+    <Compile Include="Assets\Scripts\instantiator.cs" />
     <Compile Include="Assets\Scripts\menu.cs" />
     <Compile Include="Assets\Scripts\navigation.cs" />
     <Compile Include="Assets\Scripts\phoneCamera.cs" />
